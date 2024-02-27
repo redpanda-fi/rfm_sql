@@ -87,6 +87,7 @@ SELECT approx_quantiles(segmentation.Recency, 100) AS percentiles
 FROM segmentation
 ```
 CHARTS
+![Recency Cutoff](Recency Cutoff Points.png)
 
 ### Assigning scores
 
