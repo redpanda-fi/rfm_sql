@@ -95,7 +95,7 @@ FROM segmentation
 
 Based on the cutoff points I created intervals and use them to assign scores. I assigned a higher score to those who visit more frequently and spend more money and a lower score to those who visit less frequently and spend less money. For recency, a higher score is assigned to one with a lower recency value and a lower score to one who visited longer ago.
 
-TABLE
+![rfm_scores](https://github.com/redpanda-fi/rfm_sql/assets/152161275/dfe8a3a3-c8a7-4c0c-b5a3-3074a66d588e)
 
 The below query assigns the individual scores of Recency, Frequency, and Monetary as well as computes the RFM score using the formula: RFM Score = Recency Score * 100 + Frequency Score * 10 + Monetary Score
 
@@ -135,7 +135,7 @@ FROM rfm_scores rs
 
 Now, after calculating the RFM scores, I can classify the customers based on that into 11 groups to understand their behavioral patterns. For this classification, I use the table from bloomreach RFM-Guide (https://documentation.bloomreach.com/engagement/docs/rfm-segmentation). 
 
-TABLE
+![rfm_segments](https://github.com/redpanda-fi/rfm_sql/assets/152161275/8f4e1066-a487-4549-85b1-0ae489f83c6b)
 
 SQL-query:
 
@@ -165,9 +165,9 @@ FROM all_scores all_s
 
 After performing the RFM analysis, we've categorized our customers into 11 different groups. However, some of these groups may be very small, or they may have very similar characteristics. So it might be a good idea to merge some of them.
 
-TABLE
+<img width="500" alt="segments_chart" src="https://github.com/redpanda-fi/rfm_sql/assets/152161275/34b9fe05-1532-4883-88ff-6eac3d54e518">
 
-CHART
+<img width="300" alt="segments_table" src="https://github.com/redpanda-fi/rfm_sql/assets/152161275/61059146-516f-4ce4-bccd-b460a1359cef">
 
 
 Now that we have a clearer understanding of our customer segments, we can begin to develop personalized strategies and tactics for each group and drive growth for our Global Superstore.
