@@ -86,8 +86,10 @@ FROM (
 SELECT approx_quantiles(segmentation.Recency, 100) AS percentiles
 FROM segmentation
 ```
-CHARTS
-![Recency Cutoff](https://drive.google.com/file/d/1mwvvofQH6BNIcKJDyUkH9a_3UqXL1rTF/view?usp=drive_link)
+
+![Recency Cutoff Points](https://github.com/redpanda-fi/rfm_sql/assets/152161275/6d68e5b3-5345-4d1c-9ab4-345f2219901a)
+![Frequency Cutoff Points](https://github.com/redpanda-fi/rfm_sql/assets/152161275/05e4d96d-34e6-4391-ae1c-1eae50923c77)
+![Monetary Cutoff Points](https://github.com/redpanda-fi/rfm_sql/assets/152161275/7b6cd21f-a7c6-4e5c-a572-9f78beaa5818)
 
 ### Assigning scores
 
