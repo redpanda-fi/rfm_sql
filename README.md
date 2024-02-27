@@ -1,6 +1,6 @@
-# SQL RFM Analysis For Customer Segmentation
+# RFM Analysis For Customer Segmentation (SQL)
 
-In this project, I want to demonstrate my ability to perform RFM analysis to segment customers using SQL. The analysis is primarily done in BigQuery. Visualizations will be created using a combination of Google Sheets and Power BI to better present the insights derived from the data.
+In this project I want to demonstrate my ability to perform RFM analysis to segment customers using SQL. The analysis is primarily done in BigQuery. Visualizations will be created using a combination of Google Sheets and Power BI to better present the insights derived from the data.
 
 ## Description of Dataset
 
