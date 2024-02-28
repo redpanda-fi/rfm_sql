@@ -165,9 +165,9 @@ FROM all_scores all_s
 
 After performing the RFM analysis, we've categorized our customers into 11 different groups. However, some of these groups may be very small, or they may have very similar characteristics. So it might be a good idea to merge some of them.
 
-<img width="500" alt="segments_chart" src="https://github.com/redpanda-fi/rfm_sql/assets/152161275/34b9fe05-1532-4883-88ff-6eac3d54e518">
+<img width="600" alt="segments_chart" src="https://github.com/redpanda-fi/rfm_sql/assets/152161275/34b9fe05-1532-4883-88ff-6eac3d54e518">
 
-<img width="300" alt="segments_table" src="https://github.com/redpanda-fi/rfm_sql/assets/152161275/61059146-516f-4ce4-bccd-b460a1359cef">
+<img width="600" alt="segments_table" src="https://github.com/redpanda-fi/rfm_sql/assets/152161275/61059146-516f-4ce4-bccd-b460a1359cef">
 
 
 Now that we have a clearer understanding of our customer segments, we can begin to develop personalized strategies and tactics for each group and drive growth for our Global Superstore.
