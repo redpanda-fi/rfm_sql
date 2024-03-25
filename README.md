@@ -67,7 +67,7 @@ Here is SQL-query for Recency-cutoff:
 
 ```SQL
 WITH segmentation AS  (
- SELECT
+SELECT
 Customer_ID,
 DATE_DIFF('2014-12-31',MAX(Order_Date), DAY) AS Recency,
 COUNT(Order_ID) AS Frequency,
@@ -82,8 +82,7 @@ percentiles[offset(40)] as p40,
 percentiles[offset(60)] as p60,
 percentiles[offset(80)] as p80,
 percentiles[offset(100)] as p100
-FROM (
-SELECT approx_quantiles(segmentation.Recency, 100) AS percentiles
+FROM (SELECT approx_quantiles(segmentation.Recency, 100) AS percentiles
 FROM segmentation
 ```
 
@@ -101,7 +100,7 @@ The below query assigns the individual scores of Recency, Frequency, and Monetar
 
 ```SQL
 WITH rfm_raw AS (
- SELECT
+SELECT
 Customer_ID,
 DATE_DIFF('2014-12-31',MAX(Order_Date), DAY) AS Recency,
 COUNT(Order_ID) AS Frequency,
@@ -109,7 +108,7 @@ ROUND(AVG(Order_Amount),2) AS Monetary
 FROM `global-superstore-415215.superstore.rfm`
 GROUP BY Customer_ID),
 rfm_scores AS (
- SELECT
+SELECT
 r.*,
 CASE WHEN Recency <= 9 THEN 5
     WHEN Recency <= 23 THEN 4
